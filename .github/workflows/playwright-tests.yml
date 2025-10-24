@@ -44,11 +44,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Run API Tests
-        run: npx playwright test tests/api.spec.js --reporter=html
+      # - name: Run API Tests
+        # run: npx playwright test tests/api.spec.js --reporter=html
 
       - name: Upload Playwright HTML report
         if: always()

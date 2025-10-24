@@ -1,10 +1,10 @@
-🧠 Overview
+Overview
 
 This project is a Playwright Automation Suite using the Page Object Model (POM) structure to validate the UI and API of Revolving Games – Stage Environment
 .
 The POM structure ensures clean test maintenance, scalability, and reusability across test modules.
 
-🚀 Features
+Features
 
 Page Object Model (POM) structure for maintainability
 
@@ -16,7 +16,7 @@ CI/CD ready (GitHub Actions / Jenkins)
 
 Detailed HTML reports for every test run
 
-🧱 Setup & Run
+Setup & Run
 git clone https://github.com/<your-repo>/revolvinggames-playwright.git
 cd revolvinggames-playwright
 npm install -D @playwright/test
@@ -26,7 +26,6 @@ npx playwright install
 Run tests:
 
 npx playwright test
-
 
 Run specific tests:
 
@@ -38,11 +37,11 @@ View report:
 
 npx playwright show-report
 
-📸 Screenshots
+Screenshots
 
 All screenshots for failed tests are saved under /screenshots.
 
-👨‍💻 Author
+Author
 
 Shahid Abbas Awaisy
 QA Automation Engineer | Playwright | API & UI Testing

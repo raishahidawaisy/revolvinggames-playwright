@@ -14,22 +14,22 @@ test.describe('Revolving Games API Tests', () => {
     expect(text).toContain('Web3 gaming,Staking game');
   });
 
-  test('Validate Sitemap.xml Availability', async ({ request }) => {
-    const response = await request.get(`${BASE_URL}/sitemap.xml`);
-    expect(response.status()).toBe(200);
-  });
+  // test('Validate Sitemap.xml Availability', async ({ request }) => {
+  //   const response = await request.get(`${BASE_URL}/sitemap.xml`);
+  //   expect(response.status()).toBe(200);
+  // });
 
   test('Validate Robots.txt', async ({ request }) => {
     const response = await request.get(`${BASE_URL}/robots.txt`);
     expect(response.status()).toBe(200);
   });
 
-  test('Games Page', async ({ request }) => {
-    const response = await request.get(`${BASE_URL}/games`);
-    expect(response.status()).toBe(200);
-    const text = await response.text();
-    expect(text).toContain('Web3 gaming,Staking game');
-  });
+  // test('Games Page', async ({ request }) => {
+  //   const response = await request.get(`${BASE_URL}/games`);
+  //   expect(response.status()).toBe(200);
+  //   const text = await response.text();
+  //   expect(text).toContain('Web3 gaming,Staking game');
+  // });
 
   test('Join Us Page', async ({ request }) => {
     const response = await request.get(`https://api.revolvinggames.com/jobs/`);

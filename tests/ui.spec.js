@@ -41,7 +41,6 @@ test.describe('Revolving Games UI Tests (POM)', () => {
   test('Validate Contact Page Form', async ({ page }) => {
     const contactPage = new ContactPage(page);
     await contactPage.goto();
-
     await safeRun(page, 'Contact Form Elements', async () => contactPage.validateFormElements());
   });
 });

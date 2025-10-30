@@ -2,6 +2,7 @@
 import { test, expect } from '@playwright/test';
 
 import { fetchWithRetry } from '../utils/apiHelper';
+import { text } from 'stream/consumers';
 
 const BASE_URL = 'https://stage.revolvinggames.com';
 
@@ -14,9 +15,9 @@ test.describe('Revolving Games API Tests', () => {
     expect(text).toContain('Web3 gaming,Staking game');
   });
 
-  // test('Validate Sitemap.xml Availability', async ({ request }) => {
-  //   const response = await request.get(`${BASE_URL}/sitemap.xml`);
-  //   expect(response.status()).toBe(200);
+  // test('Validate header text', async ({ request }) => {
+  //   const response = await request.get(`${BASE_URL}`);
+  //   expect(text).toHaveTitle('Revolving Games');
   // });
 
   test('Validate Robots.txt', async ({ request }) => {

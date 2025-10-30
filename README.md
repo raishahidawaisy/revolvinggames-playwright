@@ -41,6 +41,16 @@ Screenshots
 
 All screenshots for failed tests are saved under /screenshots.
 
+Use parallel worker
+Use tags in test files and use them in playwright.config.js file in scripts to run a subset of tests
+
+Added projects in Config file and Config method to run tests in 3 mobile and 3 desktop browsers
+
+To stop tracking old report files
+
+git rm -r --cached html-report/
+
+
 Author
 
 Shahid Abbas Awaisy

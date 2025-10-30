@@ -7,7 +7,11 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:e2e:desktop": "npx playwright test --project=Desktop-Browsers",
+    "test:e2e:mobile-api": "npx playwright test tests/api.spec.js --project=Mobile-Browsers --headed",
+    "test:e2e:smoke": "npx playwright test tests/api.spec.js --grep @smoke",
+    "test:e2e": "npx playwright test"
   },
   "repository": {
     "type": "git",

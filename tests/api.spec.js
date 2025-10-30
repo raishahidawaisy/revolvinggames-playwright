@@ -7,7 +7,7 @@ const BASE_URL = 'https://stage.revolvinggames.com';
 
 test.describe('Revolving Games API Tests', () => {
 
-  test('Verify Homepage API Response', async ({ request }) => {
+  test('@smoke - Verify Homepage API Response', async ({ request }) => {
     const response = await request.get(BASE_URL);
     expect(response.status()).toBe(200);
     const text = await response.text();
@@ -31,7 +31,7 @@ test.describe('Revolving Games API Tests', () => {
   //   expect(text).toContain('Web3 gaming,Staking game');
   // });
 
-  test('Join Us Page', async ({ request }) => {
+  test('@smoke - Join Us Page', async ({ request }) => {
     const response = await request.get(`https://api.revolvinggames.com/jobs/`);
     expect(response.status()).toBe(200);
   });
